@@ -1,0 +1,12 @@
+<?php
+$host = "localhost";
+$user = "12113";
+$pass = "TU_PASSWORD_DE_BD"; // Reemplaza por tu contraseña real de BD
+$dbname = "12113";
+
+$conn = new mysqli($host, $user, $pass, $dbname);
+
+if ($conn->connect_error) {
+    die("Error de conexion: " . $conn->connect_error);
+}
+?
